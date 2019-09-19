@@ -4,9 +4,11 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { paths } = require('./constants');
 
 module.exports = {
-    entry: {
-        main: paths.src + '/index.js'
-    },
+    entry: [
+        'core-js/modules/es.promise',
+        'core-js/modules/es.array.iterator',
+        paths.src + '/index.js'
+    ],
     output: {
         path: paths.build,
         filename: '[name].bundle.js'
