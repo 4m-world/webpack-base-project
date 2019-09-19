@@ -1,0 +1,9 @@
+{
+  "name": "webpack-base-project",
+  "version": "1.0.0",
+  "description": "A base project for JS development",
+  "main": "index.js",
+  "repository": "https://github.com/4m-world/webpack-base-project.git",
+  "author": "Mohammed M. Melhem",
+  "license": "MIT"
+}
