@@ -8,7 +8,10 @@
   "license": "MIT",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config config/webpack.dev.js",
-    "build": "cross-env NODE_ENV=development webpack --config config/webpack.prod.js"
+	"build": "cross-env NODE_ENV=development webpack --config config/webpack.prod.js",
+	"build:clean": "rimraf ./build",
+	"lint:js": "eslint src --ext .js,.jsx,.md --cache --cache-location .cache/.eslintcace",
+	"lint:js:fix": "npm run lint:js --fix"
   },
   "keywords": [
     "webpack",
@@ -49,6 +52,7 @@
     "postcss-preset-env": "^6.7.0",
     "prettier": "^1.18.2",
     "regenerator-runtime": "^0.13.3",
+    "rimraf": "^3.0.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "terser-webpack-plugin": "^2.1.0",
